@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import SignUp from "./SignUp";
 
 function App() {
   // Home page perfilTrabajador
@@ -19,9 +20,9 @@ function App() {
         <Route path="/SignUp">
           <SignUp />
         </Route>
-        <Route path="/SignIn">
+        {/* <Route path="/SignIn">
           <Users />
-        </Route>
+        </Route> */}
         <Route path="/">
           <div className="App">
             <header className="App-header">
