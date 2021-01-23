@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
-  
   // Home page perfilTrabajador
 
   //     Home page perfilContratador
@@ -11,18 +11,26 @@ function App() {
 
   //     Search bar funcional
 
-  //     perfil  
-  
-  
+  //     perfil
+
   return (
-    <div className="App">
-      <header className="App-header">
-       <h1> Contratamex</h1>
-
-
-
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/SignUp">
+          <SignUp />
+        </Route>
+        <Route path="/SignIn">
+          <Users />
+        </Route>
+        <Route path="/">
+          <div className="App">
+            <header className="App-header">
+              <h1>Contratamex</h1>
+            </header>
+          </div>
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 

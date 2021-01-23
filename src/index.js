@@ -1,18 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import SignUp from './SignUp';
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import SignUp from "./SignUp";
 
 ReactDOM.render(
   <React.StrictMode>
-    <SignUp/>
     {/* <SignIn/>  */}
 
     {/* <eligePerfil/> */}
-{/* 
+    {/* 
     perfilTrabajador
 
     perfilContratador
@@ -20,10 +18,8 @@ ReactDOM.render(
     crearTrabajo */}
 
     <App />
-      
-
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
