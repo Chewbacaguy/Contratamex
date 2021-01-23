@@ -3,20 +3,10 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import SignUp from "./SignUp";
+import SignUp from "./auth/SignUp";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <SignIn/>  */}
-
-    {/* <eligePerfil/> */}
-    {/* 
-    perfilTrabajador
-
-    perfilContratador
-
-    crearTrabajo */}
-
     <App />
   </React.StrictMode>,
   document.getElementById("root")

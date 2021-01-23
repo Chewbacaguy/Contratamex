@@ -1,7 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import SignUp from "./SignUp";
+import SignUp from "./auth/SignUp";
+import SignIn from "./auth/SignIn";
+import Navbar from "./Navbar";
+import LandingPage from "./landingPage";
 
 function App() {
   // Home page perfilTrabajador
@@ -16,20 +19,11 @@ function App() {
 
   return (
     <Router>
+      <Navbar />
       <Switch>
-        <Route path="/SignUp">
-          <SignUp />
-        </Route>
-        {/* <Route path="/SignIn">
-          <Users />
-        </Route> */}
-        <Route path="/">
-          <div className="App">
-            <header className="App-header">
-              <h1>Contratamex</h1>
-            </header>
-          </div>
-        </Route>
+        <Route path="/SignUp" component={SignUp} />
+        <Route path="/SignIn" component={SignIn} />
+        <Route exact path="/" component={LandingPage} />
       </Switch>
     </Router>
   );
