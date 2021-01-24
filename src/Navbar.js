@@ -1,19 +1,33 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
+const navStyle = {
+  position: "relative",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-between",
+};
+const ulStyle = {
+  position: "relative",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-around",
+};
+const liStyle = { listStyle: "none", padding: 5 };
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav className="navbar" style={navStyle}>
       <h1>ContrataMex</h1>
       <div className="links">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+        <ul style={ulStyle}>
+          <li style={liStyle}>
+            <NavLink to="/">Home</NavLink>
           </li>
-          <li>
-            <Link to="/SignUp">SignUp</Link>
+          <li style={liStyle}>
+            <NavLink to="/SignUp">SignUp</NavLink>
           </li>
-          <li>
-            <Link to="/SignIn">SignIn</Link>
+          <li style={liStyle}>
+            <NavLink to="/SignIn">SignIn</NavLink>
           </li>
         </ul>
       </div>

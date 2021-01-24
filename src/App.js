@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignUp from "./auth/SignUp";
 import SignIn from "./auth/SignIn";
 import Navbar from "./Navbar";
@@ -8,13 +7,9 @@ import LandingPage from "./landingPage";
 
 function App() {
   // Home page perfilTrabajador
-
   //     Home page perfilContratador
-
   //     Bandeja mensajes
-
   //     Search bar funcional
-
   //     perfil
 
   return (
